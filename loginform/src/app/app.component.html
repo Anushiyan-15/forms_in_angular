@@ -1,0 +1,27 @@
+<div class="container bg-info" style="margin-top: 200px; width: 500px">
+  <form #loginform="ngForm" (ngSubmit)="onsubmit(loginform)">
+    <!-- <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="emailaddress"  [(ngModel)]="user.email" required email >                                                      
+      <div class="form-text text-danger" *ngIf="loginform.controls['email']?.invalid && loginform.controls['email']?.touched">
+            <div class="form-text text-danger" *ngIf="loginform.controls['email']?.errors?.['required']">emailaddress is required</div>
+            <div class="form-text text-danger" *ngIf="loginform.controls['email']?.errors?.['email']">emailaddress is invalid</div>
+    </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="user.password" required minlength="5">
+    </div>
+    <button type="submit" class="btn btn-primary "  [disabled]="loginform.invalid">Submit</button> -->
+
+    <div class="mb-3">
+      <label class="form-label" for="country">country:</label>
+      <select class="form-select" [(ngModel)]="user.country">
+        <option selected>Select country</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </form>
+</div>
